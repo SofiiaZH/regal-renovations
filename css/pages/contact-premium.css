@@ -1,0 +1,159 @@
+
+/* Scoped Contact page styling: other pages remain unchanged. */
+.premium-contact {
+  background: #08120d;
+  color: #f7faf7;
+}
+.premium-contact main {
+  position: relative;
+  isolation: isolate;
+  background: #0c1b12;
+}
+.premium-contact main::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(100deg, rgba(3,12,8,.66) 0%, rgba(5,18,11,.43) 53%, rgba(5,15,10,.28) 100%),
+    url("../../assets/images/brand/hero-home.jpg") center center / cover no-repeat;
+}
+.premium-contact .inner-hero {
+  background: transparent;
+  padding: 166px 5vw 48px;
+}
+.premium-contact .inner-hero .eyebrow,
+.premium-contact .contact-details > .eyebrow {
+  color: #87cda0;
+  letter-spacing: .17em;
+}
+.premium-contact .inner-hero h1 {
+  font-family: Georgia,serif;
+  font-weight: 400;
+  font-size: clamp(2.8rem, 5.4vw, 5.5rem);
+  line-height: 1.06;
+  letter-spacing: -.025em;
+  max-width: 900px;
+  margin: 18px 0 22px;
+}
+.premium-contact .inner-hero h1 em {
+  font-weight: 400;
+  font-style: normal;
+  color: #8acaa2;
+}
+.premium-contact .contact-lead {
+  color: #e3ebe4;
+  max-width: 610px;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  text-shadow: 0 1px 8px rgba(0,0,0,.3);
+}
+.premium-contact .page-section {
+  padding: 28px 5vw 110px;
+  background: transparent;
+}
+.premium-contact .contact-grid {
+  grid-template-columns: minmax(0, .88fr) minmax(0, 1.12fr);
+  gap: clamp(22px, 4vw, 68px);
+  align-items: start;
+}
+.premium-contact .contact-details,
+.premium-contact .form {
+  border: 1px solid rgba(145,207,166,.40);
+  border-radius: 14px;
+  background: linear-gradient(145deg,rgba(12,31,21,.85),rgba(4,16,11,.78));
+  box-shadow: 0 20px 45px rgba(0,0,0,.17);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  padding: clamp(24px, 3vw, 42px);
+  min-width: 0;
+}
+.premium-contact .contact-details h2 {
+  font-family: Georgia,serif;
+  color: #fff;
+  font-weight: 400;
+  font-size: clamp(2rem, 3vw, 3.3rem);
+  line-height: 1.12;
+  margin: 16px 0 26px;
+}
+.premium-contact .contact-details p {
+  color: #dce8df;
+  line-height: 1.75;
+  margin: 0 0 24px;
+}
+.premium-contact .contact-details strong {
+  display: inline-block;
+  color: #91d7aa;
+  font-size: .8rem;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  margin-bottom: 5px;
+}
+.premium-contact .contact-details a {
+  color: #fff;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+.premium-contact .contact-details a:hover { color: #a2e6b9; }
+.premium-contact .contact-details .social-link {
+  color: #94dcad;
+  font-weight: 600;
+}
+.premium-contact .field { margin-bottom: 19px; }
+.premium-contact .field label {
+  color: #dfece2;
+  font-weight: 500;
+  letter-spacing: .02em;
+  font-size: .87rem;
+  margin-bottom: 9px;
+}
+.premium-contact .field input,
+.premium-contact .field select,
+.premium-contact .field textarea {
+  background: rgba(5,18,11,.58);
+  color: #fff;
+  border: 1px solid rgba(155,204,169,.38);
+  border-radius: 8px;
+  padding: 14px 15px;
+  font: inherit;
+  font-size: .95rem;
+  transition: border-color .2s, box-shadow .2s;
+}
+.premium-contact .field select option { background: #10251a; color: #fff; }
+.premium-contact .field input:focus,
+.premium-contact .field select:focus,
+.premium-contact .field textarea:focus {
+  outline: none;
+  border-color: #9be0b1;
+  box-shadow: 0 0 0 3px rgba(113,209,146,.16);
+}
+.premium-contact .field textarea { min-height: 140px; }
+.premium-contact .form .btn {
+  background: linear-gradient(120deg,#17633a,#10462c);
+  color: #fff;
+  border: 1px solid rgba(145,219,164,.45);
+  border-radius: 100px;
+  padding: 15px 28px;
+}
+.premium-contact .form .btn:hover { background: #207a49; }
+.premium-contact .form-status { color: #e4f4e7; }
+.premium-contact .error { color: #ffb8b8; }
+@media (max-width: 900px) {
+  .premium-contact .inner-hero { padding: 145px 5vw 38px; }
+  .premium-contact .contact-grid { grid-template-columns: 1fr; gap: 22px; }
+  .premium-contact .page-section { padding: 20px 5vw 75px; }
+}
+@media (max-width: 560px) {
+  .premium-contact .inner-hero { padding: 128px 6vw 28px; }
+  .premium-contact .inner-hero h1 { font-size: clamp(2.35rem, 10vw, 3.4rem); }
+  .premium-contact .contact-lead { font-size: .96rem; }
+  .premium-contact .page-section { padding: 14px 6vw 60px; }
+  .premium-contact .contact-details,
+  .premium-contact .form { padding: 25px 21px; }
+  .premium-contact .form .btn { width: 100%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .premium-contact .field input,
+  .premium-contact .field select,
+  .premium-contact .field textarea { transition: none; }
+}

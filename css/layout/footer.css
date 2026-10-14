@@ -1,0 +1,142 @@
+.prefooter {
+  background: linear-gradient(115deg, #789987 0%, #426f56 42%, #183f2b 76%, #0b2016 100%);
+  color: white;
+  padding: 74px 5vw;
+}
+.prefooter-inner {
+  width: min(var(--max), 100%);
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 35px;
+}
+.prefooter h2 {
+  font-size: clamp(2.3rem, 4.5vw, 4.6rem);
+}
+.site-footer {
+  position: relative;
+  background: var(--black);
+  color: #e8eee9;
+  padding: 105px 5vw 28px;
+  overflow: hidden;
+}
+.site-footer:before {
+  content: "";
+  position: absolute;
+  top: -42px;
+  left: -5%;
+  width: 110%;
+  height: 78px;
+  background: var(--cream);
+  border-radius: 0 0 50% 50%;
+}
+.footer-grid {
+  width: min(var(--max), 100%);
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr;
+  gap: 80px;
+}
+.footer-logo {
+  width: 200px;
+  height: 170px;
+  object-fit: contain;
+  mix-blend-mode: screen;
+  margin-bottom: 20px;
+  transform: translateX(-15px);
+}
+.footer-contact > p {
+  margin: -25px 0 42px;
+}
+.footer-contact a {
+  display: block;
+  width: max-content;
+  margin: 2px 0;
+}
+.footer-nav {
+  justify-self: end;
+}
+.footer-nav h3 {
+  font:
+    800 0.75rem Arial,
+    sans-serif;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #8eaa99;
+  margin-bottom: 18px;
+}
+.footer-nav a {
+  display: block;
+  margin: 10px 0;
+}
+.footer-bottom {
+  width: min(var(--max), 100%);
+  margin: 38px auto 0;
+  padding-top: 20px;
+  border-top: 1px solid #ffffff20;
+  font-size: 0.74rem;
+  color: #8f9891;
+}
+@media (max-width: 700px) {
+  .prefooter-inner,
+  .footer-grid {
+    display: block;
+  }
+  .prefooter .btn {
+    margin-top: 25px;
+  }
+  .footer-nav {
+    margin-top: 40px;
+  }
+  .site-footer:before {
+    height: 55px;
+    top: -30px;
+  }
+}
+@media (max-width: 560px) {
+  .prefooter {
+    padding: 58px 6vw;
+  }
+  .prefooter-inner {
+    width: 100%;
+  }
+  .prefooter h2 {
+    font-size: clamp(2rem, 10vw, 3rem);
+  }
+  .site-footer {
+    padding: 88px 6vw 24px;
+  }
+  .footer-grid,
+  .footer-bottom {
+    width: 100%;
+  }
+  .footer-logo {
+    max-width: 160px;
+  }
+  .footer-contact a {
+    width: auto;
+    overflow-wrap: anywhere;
+  }
+  .footer-bottom {
+    margin-top: 42px;
+  }
+  .footer-nav {
+    display: none;
+  }
+}
+
+
+/* Premium CTA: match the Contact Us button in the site header. */
+.prefooter .btn,
+.prefooter .btn-light {
+  background: var(--green);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,.28);
+  border-radius: 999px;
+}
+.prefooter .btn:hover,
+.prefooter .btn-light:hover {
+  background: var(--green-bright);
+  color: #fff;
+}

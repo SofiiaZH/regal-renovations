@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- REPLACE [FINAL_DOMAIN] after domain purchase -->
+  <url><loc>https://[FINAL_DOMAIN]/</loc></url>
+  <url><loc>https://[FINAL_DOMAIN]/services.html</loc></url>
+  <url><loc>https://[FINAL_DOMAIN]/projects.html</loc></url>
+  <url><loc>https://[FINAL_DOMAIN]/about.html</loc></url>
+  <url><loc>https://[FINAL_DOMAIN]/contact.html</loc></url>
+</urlset>

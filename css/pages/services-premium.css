@@ -1,0 +1,13 @@
+/* Taller glass cards, light background photo and category icons. */
+.premium-services .services-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;align-items:stretch}
+.premium-services .service-detail{position:relative;min-width:0;min-height:370px;padding:28px 28px 35px;border:1px solid var(--premium-line);border-radius:12px;background:linear-gradient(145deg,rgba(12,30,21,.84),rgba(3,13,9,.72));box-shadow:0 16px 35px rgba(0,0,0,.14);color:#fff;backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);transition:transform .22s,border-color .22s}
+.premium-services .service-detail:hover{transform:translateY(-4px);border-color:#8fceaa}
+.premium-services .service-top{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(130,196,151,.48);padding-bottom:12px;margin-bottom:18px}
+.premium-services .service-number{font:400 clamp(3.2rem,4.4vw,4.4rem)/1 Georgia,serif;color:#78b990;opacity:.9}
+.premium-services .service-icon{width:37px;height:37px;color:#8acfa4;flex:none}
+.premium-services .service-detail h3{font:500 clamp(1.23rem,1.7vw,1.55rem)/1.23 Georgia,serif;color:#fff;margin:0 0 18px}
+.premium-services .service-detail ul{list-style:none;padding:0;margin:0;color:#e3eee6}
+.premium-services .service-detail li{position:relative;padding:0 0 9px 23px;line-height:1.35;font-size:.93rem}
+.premium-services .service-detail li:before{content:'✓';position:absolute;left:0;color:#74d99b;font-weight:700}
+@media(max-width:1050px){.premium-services .services-list{grid-template-columns:repeat(2,minmax(0,1fr))}.premium-services .service-detail{min-height:330px}}
+@media(max-width:640px){.premium-services .services-list{grid-template-columns:1fr;gap:14px}.premium-services .service-detail{min-height:0;padding:23px 22px 26px}.premium-services .service-number{font-size:3.35rem}}

@@ -1,0 +1,10 @@
+/* Projects uses the same bright architectural background and refined typography. */
+.premium-projects .projects-note{color:#edf2eb;line-height:1.7;max-width:700px;margin:0 0 30px;text-shadow:0 1px 8px #07100d}
+.premium-projects .projects-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.premium-projects .project-card{border:1px solid var(--premium-line);border-radius:13px;overflow:hidden;background:rgba(12,29,20,.65);box-shadow:0 18px 38px rgba(0,0,0,.18)}
+.premium-projects .project-card img{display:block;width:100%;height:100%;object-fit:cover;filter:saturate(.95)}
+.premium-projects .project-overlay{background:linear-gradient(transparent,rgba(3,12,8,.88));color:#fff}
+.premium-projects .project-overlay span{color:#a5e3b8}
+.premium-projects .project-overlay h3{font-weight:500;color:#fff}
+@media(max-width:1050px){.premium-projects .projects-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:640px){.premium-projects .projects-grid{grid-template-columns:1fr;gap:16px}}

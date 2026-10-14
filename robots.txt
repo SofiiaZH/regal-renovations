@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# REPLACE [FINAL_DOMAIN] after the domain is purchased
+Sitemap: https://[FINAL_DOMAIN]/sitemap.xml

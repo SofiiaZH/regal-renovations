@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en-NZ">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/icons/favicon-32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="assets/icons/favicon-192.png"
+    />
+    <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png" />
+    <link rel="stylesheet" href="css/base/variables.css" />
+    <link rel="stylesheet" href="css/base/reset.css" />
+    <link rel="stylesheet" href="css/base/typography.css" />
+    <link rel="stylesheet" href="css/layout/header.css" />
+    <link rel="stylesheet" href="css/layout/footer.css" />
+    <link rel="stylesheet" href="css/components/buttons.css" />
+    <link rel="stylesheet" href="css/components/cards.css" />
+    <title>Contact Regal Renovations | Auckland</title>
+    <meta
+      name="description"
+      content="Contact Regal Renovations for renovation and building enquiries across Auckland. Call 022 376 4200 or email Dale."
+    />
+    <link rel="canonical" href="https://[FINAL_DOMAIN]/contact.html" />
+    <meta property="og:title" content="Contact Regal Renovations | Auckland" />
+    <meta
+      property="og:description"
+      content="Contact Regal Renovations for renovation and building enquiries across Auckland. Call 022 376 4200 or email Dale."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://[FINAL_DOMAIN]/contact.html" />
+    <meta
+      property="og:image"
+      content="https://[FINAL_DOMAIN]/assets/images/brand/hero-home.jpg"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="stylesheet" href="css/pages/inner.css" />
+    <link rel="stylesheet" href="css/pages/contact-premium.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "HomeAndConstructionBusiness",
+        "name": "Regal Renovations",
+        "url": "https://[FINAL_DOMAIN]/contact.html",
+        "email": "dale@regalrenovations.co.nz",
+        "telephone": "+64 22 376 4200",
+        "areaServed": { "@type": "City", "name": "Auckland" },
+        "founder": { "@type": "Person", "name": "Dale Gommersall" },
+        "sameAs": ["https://www.facebook.com/profile.php?id=61572219074499"]
+      }
+    </script>
+  </head>
+  <body class="premium-contact">
+    <header class="site-header">
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="brand" href="index.html" aria-label="Regal Renovations home"
+          ><img
+            src="assets/images/logo/regal_renovations_logo.png"
+            alt="Regal Renovations logo"
+        /></a>
+        <div class="nav-links" id="navLinks">
+          <a href="index.html">Home</a><a href="services.html">Services</a
+          ><a href="projects.html">Projects</a><a href="about.html">About</a
+          ><a class="contact-pill" href="contact.html">Contact Us</a>
+        </div>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-controls="navLinks"
+          aria-expanded="false"
+          aria-label="Open navigation"
+        >
+          ☰
+        </button>
+      </nav>
+    </header>
+    <main>
+      <section class="inner-hero">
+        <div>
+          <div class="eyebrow">START A CONVERSATION</div>
+          <h1>Let's bring your <em>project to life.</em></h1>
+          <p class="contact-lead">Tell us what you're planning. We're here to help you take the next step with confidence.</p>
+        </div>
+      </section>
+      <section class="page-section">
+        <div class="page-inner contact-grid">
+          <div class="contact-details">
+            <div class="eyebrow">GET IN TOUCH</div>
+            <h2>Tell us about your project.</h2>
+            <p>
+              For renovation and building enquiries across Auckland, contact
+              Dale or send the enquiry form.
+            </p>
+            <p>
+              <strong>Phone</strong><br /><a href="tel:+64223764200"
+                >022 376 4200</a
+              >
+            </p>
+            <p>
+              <strong>Email</strong><br /><a
+                href="mailto:dale@regalrenovations.co.nz"
+                >dale@regalrenovations.co.nz</a
+              >
+            </p>
+            <a
+              class="social-link"
+              href="https://www.facebook.com/profile.php?id=61572219074499"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Facebook ↗</a
+            >
+          </div>
+          <form
+            class="form"
+            id="contactForm"
+            novalidate
+            data-form-endpoint="[FORM_ENDPOINT_REQUIRED]"
+          >
+            <div class="field">
+              <label for="name">Name *</label
+              ><input id="name" name="name" autocomplete="name" required />
+              <div class="error">Please enter your name.</div>
+            </div>
+            <div class="field">
+              <label for="email">Email *</label
+              ><input
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                required
+              />
+              <div class="error">Please enter a valid email.</div>
+            </div>
+            <div class="field">
+              <label for="phone">Phone</label
+              ><input id="phone" name="phone" type="tel" autocomplete="tel" />
+            </div>
+            <div class="field">
+              <label for="service">Service required</label
+              ><select id="service" name="service">
+                <option value="">Select a service</option>
+                <option>Home renovation</option>
+                <option>Kitchen renovation</option>
+                <option>Bathroom renovation</option>
+                <option>Deck / outdoor living</option>
+                <option>Extension / structural alteration</option>
+                <option>Cladding / recladding</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="field hp" aria-hidden="true">
+              <label for="website">Website</label
+              ><input
+                id="website"
+                name="website"
+                tabindex="-1"
+                autocomplete="off"
+              />
+            </div>
+            <div class="field">
+              <label for="message">Tell us about your project *</label
+              ><textarea id="message" name="message" required></textarea>
+              <div class="error">Please add a short project description.</div>
+            </div>
+            <button class="btn" type="submit">Send Enquiry →</button>
+            <p
+              class="form-status"
+              id="formStatus"
+              role="status"
+              aria-live="polite"
+            ></p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <section class="prefooter">
+      <div class="prefooter-inner">
+        <div>
+          <div class="eyebrow" style="color: white">Your project</div>
+          <h2>Ready to improve your home?</h2>
+        </div>
+        <a class="btn btn-light" href="contact.html">Contact Us →</a>
+      </div>
+    </section>
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div class="footer-contact">
+          <img
+            class="footer-logo"
+            src="assets/images/logo/regal_renovations_logo.png"
+            alt="Regal Renovations logo"
+          />
+          <p>Renovation specialists serving Auckland.</p>
+          <a href="tel:+64223764200">022 376 4200</a
+          ><a href="mailto:dale@regalrenovations.co.nz"
+            >dale@regalrenovations.co.nz</a
+          >
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <h3>Navigation</h3>
+          <a href="index.html">Home</a><a href="services.html">Services</a
+          ><a href="projects.html">Projects</a><a href="about.html">About</a
+          ><a href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        © <span id="year"></span> Regal Renovations · Auckland, New Zealand
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
